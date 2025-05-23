@@ -42,16 +42,25 @@
 			h(1fr)
 		}
 	}  
-	block(width: 100%, height: 100%, stroke: (bottom:0.75pt), inset: 0.5em,{
-		text(size: config.header-fontsize)[#headercontext]
-		context{
-			set text(size: config.pagenum-fontsize)
-			if(calc.odd( here().page() )){
-				place(right+bottom)[#cnt.display(numberformat)]
-			}
-			else {
-				place(left + bottom)[#cnt.display(numberformat)]
-			}
+	let pagenum = context text(size: config.pagenum-fontsize, cnt.display(numberformat))
+
+	context {
+		let a = []
+		let c = []		
+		if(calc.odd( here().page() )){
+			c = pagenum
 		}
-	})
+		else {
+			a = pagenum
+		}
+		grid(
+			columns: (1em, 1fr, 1em),
+			stroke: (bottom:0.75pt),
+			inset: 0.5em,
+			a, headercontext, c		
+
+		)
+	}
+
+
 }

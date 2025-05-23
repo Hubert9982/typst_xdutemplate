@@ -26,7 +26,7 @@ git clone git@github.com:juruoHBr/typst_xdutemplate.git
   school-name: [通信工程学院],
   major-name: [通信工程],
   teacher-name: [李~~四],
-  "teacherInXDU-name":[（如无院内导师，则无需写此条）],
+  teacherInXDU-name:[（如无院内导师，则无需写此条）],
 
 	ch-heading-font: ("SimHei","SimSun","SimSun"),
 	en-heading-font: ("Times New Roman","Times New Roman","Times New Roman"),
@@ -36,7 +36,8 @@ git clone git@github.com:juruoHBr/typst_xdutemplate.git
   main-fontsize: 12pt,
   caption-fontsize: 10.5pt,
   header-fontsize: 10.5pt,
-  pagenum-fontsize: 9pt
+  pagenum-fontsize: 9pt,
+  float-figure: auto // 图片是否浮动，如果是auto，则自动浮动，如果是none，图片在原位置
 )
 ```
 
@@ -45,6 +46,8 @@ git clone git@github.com:juruoHBr/typst_xdutemplate.git
 详情内容请打开main.typ 文件查看
 
 ## Changelog
+
+2025.5.23:  摘要的页码修改为从1开始，并且修复了页眉剧中和标题居中不在一条线上的问题
 
 2025.4.30： 更改了参考文献的字体大小和引用使用方式， 根据格式检测系统更改frontmatter的标题，修复了英文keywords只能检测到一个的问题， 目前已经能通过格式检测
 

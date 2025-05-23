@@ -6,7 +6,7 @@
   school-name: [通信工程学院],
   major-name: [通信工程],
   teacher-name: [李~~四],
-  "teacherInXDU-name":[（如无院内导师，则无需写此条）],
+  teacherInXDU-name:[（如无院内导师，则无需写此条）],
 
 	ch-heading-font: ("SimHei","SimSun","SimSun"),
 	en-heading-font: ("Times New Roman","Times New Roman","Times New Roman"),

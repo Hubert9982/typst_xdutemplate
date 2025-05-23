@@ -81,6 +81,10 @@
 	set figure(placement: config.float-figure)
 
 	cover(config)
+
+	counter(page).update(1)
+
+
 	doc
 	pagebreak()
 }
