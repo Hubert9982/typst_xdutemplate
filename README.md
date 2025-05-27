@@ -12,7 +12,7 @@
 2. 克隆本项目
 
 ```bash
-git clone git@github.com:juruoHBr/typst_xdutemplate.git
+git clone git@github.com:Hubert9982/typst_xdutemplate.git
 ```
 
 ### 在config.typ中配置和填写信息
@@ -47,6 +47,8 @@ git clone git@github.com:juruoHBr/typst_xdutemplate.git
 
 ## Changelog
 
+2025.5.27：修复了和modern-nju-thesis 双语参考文献不兼容的问题
+
 2025.5.24:  5.23修改后页眉大小字号变大的问题，修复了页码超出边距的问题
 
 2025.5.23:  摘要的页码修改为从1开始，并且修复了页眉剧中和标题居中不在一条线上的问题
@@ -71,7 +73,7 @@ git clone git@github.com:juruoHBr/typst_xdutemplate.git
 
 ## TIPS
 
-1. 常见问题，这里包含有一些常用的实现方法，例如三线表，子图等[常见问题 | Typst 中文社区导航](https://typst-doc-cn.github.io/guide/FAQ.html)
+1. 常见问题，这里包含有一些常用的实现方法，例如三线表，子图，双鱼参考文献等 [常见问题 | Typst 中文社区导航](https://typst-doc-cn.github.io/guide/FAQ.html)
 2. 参考文献中，doi和url尽量同时出现或者同时不出现，否则格式检测会报错
 
 ## 已知问题

@@ -1,4 +1,6 @@
 #import "template/template.typ": *
+#import "@preview/modern-nju-thesis:0.3.4": bilingual-bibliography
+
 
 #show: xdudoc.with()
 
@@ -80,6 +82,9 @@
 // 这里是参考文献，致谢和附录
 #after-matter[
   #bib("ref.bib")
+  // 如果需要使用双语参考文献，可以使用下面的代码
+  // #bilingual-bibliography(bibliography: bibliography.with("ref.bib"))
+
 
   = 致谢
   谢谢大家

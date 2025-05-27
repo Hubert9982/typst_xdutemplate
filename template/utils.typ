@@ -45,22 +45,16 @@
 	let pagenum = context text(size: config.pagenum-fontsize, cnt.display(numberformat))
 
 	context {
-		let a = []
-		let c = []		
+		let a = box(width: 3em,[])
+		let c = box(width: 3em,[])	
 		if(calc.odd( here().page() )){
-			c = pagenum
+			c = box(width: 3em, align(right, pagenum))
 		}
 		else {
-			a = pagenum
+			a = box(width: 3em, align(left,pagenum))
 		}
-		grid(
-			columns: (3em, 1fr, 3em),
-			align: (left,center,right),
-			stroke: (bottom:0.75pt),
-			inset: (bottom:0.5em),
-			a, headercontext, c		
-
-		)
+		block(stroke: (bottom:0.75pt),width: 100%, inset: (bottom: 0.5em),
+		a+headercontext+c)
 	}
 
 
