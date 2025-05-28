@@ -9,6 +9,7 @@
 ### 安装Typst
 
 1. 在vscode插件市场中安装tinymist插件，版本要求为0.13.*
+![tinymist](readme/tinymist.png)
 2. 克隆本项目
 
 ```bash
@@ -73,8 +74,35 @@ git clone git@github.com:Hubert9982/typst_xdutemplate.git
 
 ## TIPS
 
-1. 常见问题，这里包含有一些常用的实现方法，例如三线表，子图，双鱼参考文献等 [常见问题 | Typst 中文社区导航](https://typst-doc-cn.github.io/guide/FAQ.html)
+1. 常见问题，这里包含有一些常用的实现方法，例如三线表，子图，双语参考文献等 [常见问题 | Typst 中文社区导航](https://typst-doc-cn.github.io/guide/FAQ.html)
 2. 参考文献中，doi和url尽量同时出现或者同时不出现，否则格式检测会报错
+
+### 伪代码的解决方案
+
+typst原生不支持伪代码，可以通过引入lovelace包来解决。
+
+```
+#import "@preview/lovelace"
+#pseudocode-list[
+  + do something
+  + do something else
+  + *while* still something to do
+    + do even more
+    + *if* not done yet *then*
+      + wait a bit
+      + resume working
+    + *else*
+      + go home
+    + *end*
+  + *end*
+]
+```
+
+上面的代码是一个基于lovelace包的简单伪代码实现，其效果如下：
+
+![fakecode](readme/fakecode.png)
+
+更详细的使用教程参考lovelace [官方网站](https://typst.app/universe/package/lovelace/)
 
 ## 已知问题
 
