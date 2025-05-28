@@ -82,8 +82,12 @@
 // 这里是参考文献，致谢和附录
 #after-matter[
   #bib("ref.bib")
-  // 如果需要使用双语参考文献，可以使用下面的代码
-  // #bilingual-bibliography(bibliography: bibliography.with("ref.bib"))
+  // 如果需要使用双语参考文献，可以使用下面的代码  
+  // #{
+  // 	set text(size: 10.5pt)
+  //   bilingual-bibliography(bibliography: bibliography.with("ref.bib"), style: "gb-7714-2015-numeric")
+  // }
+  
 
 
   = 致谢
