@@ -28,11 +28,19 @@
 		first-line-indent: (amount: 2em, all: true), 
 		justify: true,
 	)
+
+	let margin-dict = (:)
+	if(config.symmetrical-margins){
+		margin-dict=(top:3cm, bottom: 2cm, inside: 4cm, outside: 2cm)
+	}
+	else {
+		margin-dict=(top:3cm, bottom: 2cm, left: 4cm, right: 2cm)
+	}
+
 	set page(
-		margin: (top:3cm, bottom: 2cm, inside: 4cm, outside: 2cm),
+		margin:margin-dict ,
 		header-ascent: 30%, //页眉和正文之间的间距
 	)
-
 
 
 	//章节标题设置

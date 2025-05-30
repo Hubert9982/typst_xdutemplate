@@ -81,6 +81,10 @@
 
 // 这里是参考文献，致谢和附录
 #after-matter[
+
+  = 致谢
+  谢谢大家
+
   #bib("ref.bib")
   // 如果需要使用双语参考文献，可以使用下面的代码  
   // #{
@@ -89,14 +93,12 @@
   // }
   
 
-
-  = 致谢
-  谢谢大家
   #appendix[
     = 这是附录A
     #figure(
       rect(width: 5cm, height: 5cm),
       caption: [测试],
+      placement: none
     )
     $
       f + g
@@ -104,4 +106,6 @@
     可以看到，附录的表和@eqq 的编号都没有问题。
 
   ]
+
+
 ]

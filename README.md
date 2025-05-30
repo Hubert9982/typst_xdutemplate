@@ -9,7 +9,7 @@
 ### 安装Typst
 
 1. 在vscode插件市场中安装tinymist插件，版本要求为0.13.*
-![tinymist](readme/tinymist.png)
+   ![tinymist](readme/tinymist.png)
 2. 克隆本项目
 
 ```bash
@@ -47,6 +47,8 @@ git clone git@github.com:Hubert9982/typst_xdutemplate.git
 详情内容请打开main.typ 文件查看
 
 ## Changelog
+
+2025.5.30:  增加了显示院内导师的开关，增加了对称页边距的开关，调整了致谢、参考文献、附录的位置
 
 2025.5.27：修复了和modern-nju-thesis 双语参考文献不兼容的问题
 
