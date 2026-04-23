@@ -27,7 +27,10 @@ git clone git@github.com:Hubert9982/typst_xdutemplate.git
   school-name: [通信工程学院],
   major-name: [通信工程],
   teacher-name: [李~~四],
-  teacherInXDU-name:[（如无院内导师，则无需写此条）],
+  teacherInXDU-name:(
+    display: false,
+    body: [（如无院内导师，则无需写此条）]
+  ),
 
 	ch-heading-font: ("SimHei","SimSun","SimSun"),
 	en-heading-font: ("Times New Roman","Times New Roman","Times New Roman"),
@@ -38,7 +41,8 @@ git clone git@github.com:Hubert9982/typst_xdutemplate.git
   caption-fontsize: 10.5pt,
   header-fontsize: 10.5pt,
   pagenum-fontsize: 9pt,
-  float-figure: auto // 图片是否浮动，如果是auto，则自动浮动，如果是none，图片在原位置
+  float-figure: auto, // 图片是否浮动，如果是auto，则自动浮动，如果是none，图片在原位置
+  symmetrical-margins: false, // 是否对称页边距
 )
 ```
 
