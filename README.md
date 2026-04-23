@@ -84,7 +84,7 @@ git clone git@github.com:Hubert9982/typst_xdutemplate.git
 typst原生不支持伪代码，可以通过引入lovelace包来解决。
 
 ```
-#import "@preview/lovelace"
+#import "@preview/lovelace:0.3.1": *
 #pseudocode-list[
   + do something
   + do something else
