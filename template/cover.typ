@@ -24,7 +24,7 @@
   v(.8cm)
   text(font: "SimHei",size: 42pt,tracking: 6pt)[本科毕业设计论文]
   v(1.3cm)
-  pad(image("logo.png"),left: 1cm)
+  pad(image("logo.svg", width: 33%),left: 1cm)
   v(0cm)
   {
     set text(font: "SimSun",size: 15pt)
