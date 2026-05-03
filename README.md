@@ -108,6 +108,38 @@ typst原生不支持伪代码，可以通过引入lovelace包来解决。
 
 ![fakecode](readme/fakecode.png)
 
+```
+#import "@preview/lovelace:0.3.1": *
+#figure(
+  kind: "algorithm",
+  supplement: [算法],
+  pseudocode-list(
+    numbered-title: [My cool title],
+    booktabs: true,
+    hooks: .5em,
+  )[
+    - *Input:* aaa 
+    - *Output:* bbb, cccc
+    + do something
+    + do something else
+    + *while* still something to do
+      + do even more
+      + *if* not done yet *then*
+        + wait a bit
+        + resume working
+      + *else*
+        + go home
+  ],
+  placement: none,
+) <cool>
+
+@cool 这是一个伪代码。
+```
+
+上面代码是用 figure 包装的，可用表头与引用的伪代码参考实现，以下为效果。
+
+![fakecode with title and cite](readme/fake_code_with_title_cite.png)
+
 更详细的使用教程参考lovelace [官方网站](https://typst.app/universe/package/lovelace/)
 
 ## 已知问题
