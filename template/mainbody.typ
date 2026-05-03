@@ -23,11 +23,11 @@
   show math.equation: set text(font: ("New Computer Modern Math", "SimHei"))
 	set math.equation(numbering: it=>{
     set text(font: ("Times New Roman","SimSun"))
-		"式(" + context str(counter(heading).get().first() )+ "-" + str(it) +")"
+		"式(" + str(counter(heading).get().first() )+ "-" + str(it) +")"
 	})
 
 	set figure(numbering: it=>{
-		context str(counter(heading).get().first()) + "." + str(it)
+		str(counter(heading).get().first()) + "." + str(it)
 	})
 
 	counter(page).update(1)
