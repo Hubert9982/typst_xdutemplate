@@ -30,6 +30,10 @@
 		str(counter(heading).get().first()) + "." + str(it)
 	})
 
+	show figure.where(kind: raw): set figure(numbering: it=>{
+		str(counter(heading).get().first()) + "-" + str(it)
+	})
+
 	counter(page).update(1)
 	doc
 	pagebreak()
